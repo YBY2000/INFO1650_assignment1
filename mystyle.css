@@ -1,3 +1,19 @@
+main {
+    color: rgba(255, 247, 247, 0.90);
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+header {
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+/* background video */
 #body_bg{  
     margin: 0px;  
     padding: 0px;  
@@ -19,7 +35,120 @@
     width: auto;  
 }
 
-header {
-    color: antiquewhite;
-    text-align: center;
+/* base information (name, elemental, level star) */
+.base_info {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.base_info_left {
+    width: 30%;
+    float: left;
+}
+
+.base_info_right {
+    width: 70%;
+    height: 50px;
+    float: right;
+    font-size: 32px;
+}
+
+.base_info_box {
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.base_info_name {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    color: rgba(255, 247, 247, 0.90);
+    font-weight: 400;
+    line-height: 42px;
+    white-space: normal;
+    word-break: break-word;
+    display: flex;
+    
+}
+.detail_name {
+    height: 60%;
+    margin-top: 5%;
+}
+.detail_elemental {
+    height: 60%;
+    margin-top: 15%;
+    margin-left: 10px;
+    
+}
+
+.detail_level_star {
+    display: flex;
+}
+
+.level_star_img {
+    width: 15px;
+    height: 15px;
+}
+
+.greeting {
+    font-size: 20px;
+}
+audio {
+    vertical-align: middle;
+    height: 25px;
+}
+
+/* character description, attributes table */
+.base_detail_box {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #3e1818ad;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#description {
+    height: auto;
+    width: 95%;
+    padding: 2%;
+    font-size: 15px;
+    line-height: 30px;
+    color: hsla(0,0%,100%,.45);
+}
+
+table {
+    height: auto;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.table_title {
+    text-align: left;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: inherit;
+}
+
+hr {
+    width: 98%;
+    size: 1;
+    color: #a4a3a33e;
+}
+
+.table_font {
+    font-size: 15px;
+}
+
+.table_head {
+    width: 17%;
+    height: 40px;
+    color: hsla(0,0%,100%,.45);
+    font-size: 15px;
+}
+
+.table_detail {
+    width: 33%;
+    height: 40px;
+    font-size: 15px;
 }
