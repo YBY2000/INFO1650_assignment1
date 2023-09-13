@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile - HuTao</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css_file/index.css">
     <link rel="icon" type="image/webp" href="/resources/favicon.ico">
 </head>
 
@@ -18,6 +18,9 @@
             <source class="body_bg_source" src="resources/bg_pyro.mp4" type="video/mp4">
         </video></div>
         <!-- The base infomation box -->
+        <div>
+            
+        </div>
         <div class="base_info">
             <div><img class="base_info_left" src="resources/HUTAO.png" alt="Genshin - HUTAO"></div>
             <div class="base_info_right">
@@ -35,26 +38,30 @@
                         <img src="resources/levelStar.png" alt="star" class="level_star_img">
                     </div>
                     <div>
-                        <span class="greeting">Character's greetings</span>
-                        <audio controls autoplay="false">
-                        <source src="resources/voice.wav" type="audio/wav">
-                        Your browser does not support the audio element.
-                      </audio>
+                        <details>
+                            <summary class="greeting">Greeting Voice</summary>
+                            <audio controls autoplay="false">
+                                <source src="resources/voice.wav" type="audio/wav">
+                                Your browser does not support the audio element.
+                              </audio>
+                        </details>
                     </div>
+                    <!-- End of base information -->
                     
                     <!-- Description -->
-                    <div class="base_detail_box">
+                    <div class="detail_box">
                             <p id="description">The 77th Director of the Wangsheng Funeral Parlor, a young lady managing the parlor's operations. Despite her position, she's an amiable person who puts on no airs.
                                 Her antics are as plentiful as the sand on Yaoguang Shoal. She never ceases to shock people with her countless bizarre ideas.
                                 Hu Tao may seem like all play and no work, spending every free moment on leisure and being widely considered a laissez-faire business owner.
                                 It is only during funeral ceremonies, when she personally leads her undertakers through lamp-lit alleys, that she shows her dignified and solemn side.</p>
                     </div>
+                    <!-- End of description -->
                         
-                    <!-- Base information attributes -->
-                    <div class="base_detail_box">
+                    <!-- Table of base information attributes -->
+                    <div class="detail_box">
                         <table>
                             <tr>
-                                <th colspan="4" class="table_title">Attributes<hr></th>
+                                <th colspan="4" class="box_title">Attributes<hr></th>
                             </tr>
                             <tr>
                               <td class="table_head">Name</td>
@@ -88,8 +95,170 @@
                             </tr>
                           </table>
                     </div>
+                    <!-- End of table -->
                 </div>
             </div>
+        </div>
+        <div class="other_info">
+            <!-- Talent -->
+            <div class="other_info_box">
+                <div class="box_title"><strong>Talents<hr></strong></div>
+                <!-- Talent 1 -->
+                <div class="info_box">
+                    <img src="resources/battle_talent_0.png" alt="battle_talent_1" class="img_talent">
+                    <div class="talent_title">Normal Attack: Secret Spear of Wangsheng</div>
+                    <div class="talent_detail">
+                        <span class="talent_subtitle">Normal Attack</span><br>
+                        Performs up to six consecutive spear strikes.<br><br>
+                        
+                        <span class="talent_subtitle">Charged Attack</span><br>
+                        Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.<br><br>
+                        
+                        <span class="talent_subtitle">Plunging Attack</span><br>
+                        Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.
+                    </div>
+                    <div class="talent_detail_video"><video width="350" controls><source src="resources/battle_talent_0.mp4" type="video/mp4"></video></div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Talent 2 -->
+                <div class="info_box">
+                    <img src="resources/battle_talent_1.png" alt="battle_talent_2" class="img_talent">
+                    <div class="talent_title">Guide to Afterlife</div>
+                    <div class="talent_detail">
+                        Only an unwavering flame can cleanse the impurities of this world.<br>
+                        Hu Tao consumes a set portion of her HP to knock the surrounding enemies back and enter the Paramita Papilio state.<br><br>
+                        <span class="talent_subtitle">Paramita Papilio</span><br>
+                        · Increases Hu Tao's ATK based on her Max HP at the time of entering this state. ATK Bonus gained this way cannot exceed 400% of Hu Tao's Base ATK.<br>
+                        · Converts attack DMG to <span class="font_pyro">Pyro DMG</span>, which cannot be overridden by any other elemental infusion.<br>
+                        · Charged Attacks apply the Blood Blossom effect to the enemies hit.<br>
+                        · Increases Hu Tao's resistance to interruption.<br><br>
+                        
+                        <span class="talent_subtitle">Blood Blossom</span><br>
+                        Enemies affected by Blood Blossom will take <span class="font_pyro">Pyro DMG</span> every 4s. This DMG is considered Elemental Skill DMG.<br>
+                        Each enemy can be affected by only one Blood Blossom effect at a time, and its duration may only be refreshed by Hu Tao herself.<br><br>
+                        
+                        <span class="talent_subtitle">Paramita Papilio</span>
+                        ends when its duration is over, or Hu Tao has left the battlefield or fallen.
+                    </div>
+                    <div class="talent_detail_video"><video width="350" controls><source src="resources/battle_talent_1.mp4" type="video/mp4"></video></div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Talent 3 -->
+                <div class="info_box">
+                    <img src="resources/battle_talent_2.png" alt="battle_talent_3" class="img_talent">
+                    <div class="talent_title">Spirit Soother</div>
+                    <div class="talent_detail">
+                        Commands a blazing spirit to attack, dealing <span class="font_pyro">Pyro DMG</span> in a large AoE.<br>
+                        Upon striking the enemy, regenerates a percentage of Hu Tao's Max HP. This effect can be triggered up to 5 times, based on the number of enemies hit.<br>
+                        If Hu Tao's HP is below or equal to 50% when the enemy is hit, both the DMG and HP Regeneration are increased.<br><br>
+
+                        <i>Supernatural activity by those who have already left this world is a source of great anxiety for the Wangsheng Funeral Parlor. In such cases, cremation always lets Hu Tao find peace of mind. The more anxious she feels, the stronger the flame.</i>
+                        
+                    </div>
+                    <div class="talent_detail_video"><video width="350" controls><source src="resources/battle_talent_2.mp4" type="video/mp4"></video></div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Talent 4 -->
+                <div class="info_box">
+                    <img src="resources/const_talent_0.png" alt="const_talent_1" class="img_talent">
+                    <div class="talent_title">Flutter Byg</div>
+                    <div class="talent_detail">
+                        When a <span class="talent_subtitle">Paramita Papilio</span> state activated by <span class="talent_subtitle">Guide to Afterlife</span> ends, all allies in the party (excluding Hu Tao herself) will have their CRIT Rate increased by 12% for 8s.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Talent 5 -->
+                <div class="info_box">
+                    <img src="resources/const_talent_1.png" alt="const_talent_2" class="img_talent">
+                    <div class="talent_title">Sanguine Rouge</div>
+                    <div class="talent_detail">
+                        When Hu Tao's HP is equal to or less than 50%, her <span class="font_pyro">Pyro DMG Bonus</span> is increased by 33%.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Talent 6 -->
+                <div class="info_box">
+                    <img src="resources/const_talent_2.png" alt="const_talent_3" class="img_talent">
+                    <div class="talent_title">The More the Merrier</div>
+                    <div class="talent_detail">
+                        When Hu Tao cooks a dish perfectly, she has a 18% chance to receive an additional "Suspicious" dish of the same type.
+                    </div>
+                </div>
+            </div>
+            <!-- End of talent -->
+        </div>
+        
+
+        <div style="height: 100px;"></div>
+        <div class="other_info">
+            <!-- Constellation -->
+            <div class="other_info_box">
+                <div class="box_title"><strong>Constellation<hr></strong></div>
+                <!-- Constellation 1 -->
+                <div class="info_box">
+                    <img src="resources/constellation_1.png" alt="constellation_1" class="img_talent">
+                    <div class="talent_title">Crimson Bouquet</div>
+                    <div class="talent_detail">
+                        While in a <span class="talent_subtitle">Paramita Papilio</span> state activated by <span class="talent_subtitle">Guide to Afterlife</span>, Hu Tao's Charge Attacks do not consume Stamina.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Constellation 2 -->
+                <div class="info_box">
+                    <img src="resources/constellation_2.png" alt="constellation_2" class="img_talent">
+                    <div class="talent_title">Ominous Rainfall</div>
+                    <div class="talent_detail">
+                        Increases the <span class="talent_subtitle">Blood Blossom</span> DMG by an amount equal to 10% of Hu Tao's Max HP at the time the effect is applied.
+                        Additionally, <span class="talent_subtitle">Spirit Soother</span> will also apply the <span class="talent_subtitle">Blood Blossom</span> effect.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Constellation 3 -->
+                <div class="info_box">
+                    <img src="resources/constellation_3.png" alt="constellation_3" class="img_talent">
+                    <div class="talent_title">Lingering Carmine</div>
+                    <div class="talent_detail">
+                        Increases the Level of <span class="talent_subtitle">Guide to Afterlife</span> by 3.
+                        Maximum upgrade level is 15.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Constellation 4 -->
+                <div class="info_box">
+                    <img src="resources/constellation_4.png" alt="constellation_4" class="img_talent">
+                    <div class="talent_title">Garden of Eternal Rest</div>
+                    <div class="talent_detail">
+                        Upon defeating an enemy affected by a <span class="talent_subtitle">Blood Blossom</span> that Hu Tao applied herself, all nearby allies in the party (excluding Hu Tao herself) will have their CRIT Rate increased by 12% for 15s.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Constellation 5 -->
+                <div class="info_box">
+                    <img src="resources/constellation_5.png" alt="constellation_5" class="img_talent">
+                    <div class="talent_title">Floral Incense</div>
+                    <div class="talent_detail">
+                        Increases the Level of <span class="talent_subtitle">Spirit Soother</span> by 3.<br>
+                        Maximum upgrade level is 15.
+                    </div>
+                </div>
+                <hr class="sub_hr">
+                <!-- Constellation 6 -->
+                <div class="info_box">
+                    <img src="resources/constellation_6.png" alt="constellation_6" class="img_talent">
+                    <div class="talent_title">Butterfly's Embrace</div>
+                    <div class="talent_detail">
+                        Triggers when Hu Tao's HP drops below 25%, or when she suffers a lethal strike:<br>
+                        Hu Tao will not fall as a result of the DMG sustained. Additionally, for the next 10s, all of her Elemental and Physical RES is increased by 200%, her CRIT Rate is increased by 100%, and her resistance to interruption is greatly increased.<br>
+                        This effect triggers automatically when Hu Tao has 1 HP left.<br>
+                        Can only occur once every 60s.<br>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Constellation -->
+        </div>
+    </div>
+            
+            
         </div>
     </main>
 
