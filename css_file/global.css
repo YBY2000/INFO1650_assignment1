@@ -33,13 +33,6 @@ menu li {
     margin-top: 20px;
 }
 
-button {
-    background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
-    color: white;
-    text-align: left;
-}
-
 footer {
     width: 101%;
     margin-left: -10px;

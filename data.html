@@ -5,12 +5,11 @@
     <title>Personal Data</title>
     <link rel="stylesheet" href="css_file/data.css">
     <link rel="stylesheet" href="css_file/global.css">
-    <link rel="icon" type="image/webp" href="/resources/favicon.ico">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
 </head>
 <body>
     <header>
-        <h1><strong>Character Infomation</strong></h1>
+        <h1><strong>Character Detail Data</strong></h1>
     </header>
 
     <main>
@@ -19,46 +18,311 @@
             <source class="body_bg_source" src="resources/bg_pyro.webm" type="video/webm">
             <source class="body_bg_source" src="resources/bg_pyro.mp4" type="video/mp4">
         </video></div>
+        <button onclick='location.href=("index.html")'>Back</button>
 
-        <!-- Table of base information attributes -->
-        <div class="detail_box">
+        
+        <form class="form">
+            <fieldset>
+              <legend>Select the data of talent to show</legend>
+              <div>
+                <input type="radio" id="talent1" name="talent" value="talent1">
+                <label for="talent1">Normal Attack</label><br>
+          
+                <input type="radio" id="talent2" name="talent" value="talent2">
+                <label for="talent2">Guide to Afterlife</label><br>
+          
+                <input type="radio" id="talent3" name="talent" value="talent3">
+                <label for="talent3">Spirit Soother</label>
+              </div>
+              <div>
+                <button type="submit" disabled>submit</button>
+              </div>
+            </fieldset>
+          </form>
+        
+        <!-- talent1 data table-->
+        <div id="talent1" class="detail_box">
             <table>
                 <tr>
-                    <th colspan="4" class="box_title">Attributes<hr></th>
+                    <th colspan="10" class="box_title">Normal Attack<hr></th>
                 </tr>
                 <tr>
-                  <td class="table_head">Name</td>
-                  <td class="table_detail">Hu Tao</td> 
-                  <td class="table_head">Birthday</t>
-                  <td class="table_detail">7/15</td>
+                  <td class="table_head">Level</td>
+                  <td class="table_head">Level1</td>
+                  <td class="table_head">Level2</td>
+                  <td class="table_head">Level3</td>
+                  <td class="table_head">Level4</td>
+                  <td class="table_head">Level5</td>
+                  <td class="table_head">Level6</td>
+                  <td class="table_head">Level7</td>
+                  <td class="table_head">Level8</td>
+                  <td class="table_head">Level9</td>
                 </tr>
                 <tr>
-                    <td class="table_head">Constellation</td>
-                    <td class="table_detail">Papilio Charontis</td> 
-                    <td class="table_head">Title</td>
-                    <td class="table_detail">Fragrance in Thaw</td>
+                  <td class="table_head">1-Hit DMG</td>
+                  <td class="table_detail">46.9%</td>
+                  <td class="table_detail">50.1%</td>
+                  <td class="table_detail">53.3%</td>
+                  <td class="table_detail">57.5%</td>
+                  <td class="table_detail">60.7%</td>
+                  <td class="table_detail">64.5%</td>
+                  <td class="table_detail">69.3%</td>
+                  <td class="table_detail">74.1%</td>
+                  <td class="table_detail">78.9%</td>
                 </tr>
                 <tr>
-                    <td class="table_head">Vision</td>
-                    <td class="table_detail">Pyros</td> 
-                    <td class="table_head">Affiliation</td>
-                    <td class="table_detail">Wangsheng Funeral Parlor</td>
+                  <td class="table_head">2-Hit DMG</td>
+                  <td class="table_detail">48.3%</td>
+                  <td class="table_detail">51.5%</td>
+                  <td class="table_detail">54.8%</td>
+                  <td class="table_detail">59.2%</td>
+                  <td class="table_detail">62.5%</td>
+                  <td class="table_detail">66.3%</td>
+                  <td class="table_detail">71.3%</td>
+                  <td class="table_detail">76.2%</td>
+                  <td class="table_detail">81.2%</td>
                 </tr>
                 <tr>
-                    <td class="table_head">Chinese VA</td>
-                    <td class="table_detail">陶典</td> 
-                    <td class="table_head">Korean VA</td>
-                    <td class="table_detail">Kim Ha-ru</td>
+                  <td class="table_head">3-Hit DMG</td>
+                  <td class="table_detail">61.1%</td>
+                  <td class="table_detail">65.2%</td>
+                  <td class="table_detail">69.4%</td>
+                  <td class="table_detail">74.9%</td>
+                  <td class="table_detail">79.1%</td>
+                  <td class="table_detail">83.9%</td>
+                  <td class="table_detail">90.2%</td>
+                  <td class="table_detail">96.4%</td>
+                  <td class="table_detail">102.7%</td>
                 </tr>
                 <tr>
-                    <td class="table_head">Japanese VA</td>
-                    <td class="table_detail">高橋李依</td> 
-                    <td class="table_head">English VA</td>
-                    <td class="table_detail">Brianna Knickerbocker</td>
+                  <td class="table_head">4-Hit DMG</td>
+                  <td class="table_detail">65.6%</td>
+                  <td class="table_detail">70.1%</td>
+                  <td class="table_detail">74.6%</td>
+                  <td class="table_detail">80.6%</td>
+                  <td class="table_detail">85.0%</td>
+                  <td class="table_detail">90.3%</td>
+                  <td class="table_detail">97.0%</td>
+                  <td class="table_detail">103.7%</td>
+                  <td class="table_detail">110.4%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">5-Hit DMG</td>
+                  <td class="table_detail">33.3%+35.2%</td>
+                  <td class="table_detail">35.5%+37.6%</td>
+                  <td class="table_detail">37.8%+40.0%</td>
+                  <td class="table_detail">40.8%+43.2%</td>
+                  <td class="table_detail">43.1%+45.6%</td>
+                  <td class="table_detail">45.8%+48.4%</td>
+                  <td class="table_detail">49.2%+52.0%</td>
+                  <td class="table_detail">52.6%+55.6%</td>
+                  <td class="table_detail">56.0%+59.2%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">6-Hit DMG</td>
+                  <td class="table_detail">86.0%</td>
+                  <td class="table_detail">91.8%</td>
+                  <td class="table_detail">97.7%</td>
+                  <td class="table_detail">105.5%</td>
+                  <td class="table_detail">111.4%</td>
+                  <td class="table_detail">118.2%</td>
+                  <td class="table_detail">127.0%</td>
+                  <td class="table_detail">135.8%</td>
+                  <td class="table_detail">144.6%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Charged Attack</td>
+                  <td class="table_detail">136.0%</td>
+                  <td class="table_detail">145.2%</td>
+                  <td class="table_detail">154.5%</td>
+                  <td class="table_detail">166.9%</td>
+                  <td class="table_detail">176.1%</td>
+                  <td class="table_detail">186.9%</td>
+                  <td class="table_detail">200.9%</td>
+                  <td class="table_detail">214.8%</td>
+                  <td class="table_detail">228.7%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Plunge DMG</td>
+                  <td class="table_detail">65.4%</td>
+                  <td class="table_detail">69.9%</td>
+                  <td class="table_detail">74.3%</td>
+                  <td class="table_detail">80.3%</td>
+                  <td class="table_detail">84.7%</td>
+                  <td class="table_detail">90.0%</td>
+                  <td class="table_detail">96.6%</td>
+                  <td class="table_detail">103.3%</td>
+                  <td class="table_detail">110.0%</td>
                 </tr>
               </table>
         </div>
-        <!-- End of table -->
+        <!-- End of talent1 data table -->
+
+
+        <!-- talent2 data table-->
+        <div id="talent2" class="detail_box">
+            <table>
+                <tr>
+                    <th colspan="10" class="box_title">Guide to Afterlife<hr></th>
+                </tr>
+                <tr>
+                  <td class="table_head">Level</td>
+                  <td class="table_head">Level1</td>
+                  <td class="table_head">Level2</td>
+                  <td class="table_head">Level3</td>
+                  <td class="table_head">Level4</td>
+                  <td class="table_head">Level5</td>
+                  <td class="table_head">Level6</td>
+                  <td class="table_head">Level7</td>
+                  <td class="table_head">Level8</td>
+                  <td class="table_head">Level9</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Activation Cost</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                  <td class="table_detail">30% Current HP</td>
+                </tr>
+                <tr>
+                  <td class="table_head">ATK Increase</td>
+                  <td class="table_detail">3.84% Max HP</td>
+                  <td class="table_detail">4.07% Max HP</td>
+                  <td class="table_detail">4.30% Max HP</td>
+                  <td class="table_detail">4.60% Max HP</td>
+                  <td class="table_detail">4.83% Max HP</td>
+                  <td class="table_detail">5.06% Max HP</td>
+                  <td class="table_detail">5.36% Max HP</td>
+                  <td class="table_detail">5.66% Max HP</td>
+                  <td class="table_detail">5.96% Max HP</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Blood Blossom DMG</td>
+                  <td class="table_detail">64%</td>
+                  <td class="table_detail">69%</td>
+                  <td class="table_detail">74%</td>
+                  <td class="table_detail">80%</td>
+                  <td class="table_detail">85%</td>
+                  <td class="table_detail">90%</td>
+                  <td class="table_detail">96%</td>
+                  <td class="table_detail">102%</td>
+                  <td class="table_detail">109%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Blood Blossom Duration</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                  <td class="table_detail">8.0s</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Duration</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                  <td class="table_detail">9.0s</td>
+                </tr>
+              </table>
+        </div>
+        <!-- End of talent2 data table -->
+
+
+        <!-- talent3 data table-->
+        <div id="talent3" class="detail_box">
+            <table>
+                <tr>
+                    <th colspan="10" class="box_title">Spirit Soother<hr></th>
+                </tr>
+                <tr>
+                  <td class="table_head">Level</td>
+                  <td class="table_head">Level1</td>
+                  <td class="table_head">Level2</td>
+                  <td class="table_head">Level3</td>
+                  <td class="table_head">Level4</td>
+                  <td class="table_head">Level5</td>
+                  <td class="table_head">Level6</td>
+                  <td class="table_head">Level7</td>
+                  <td class="table_head">Level8</td>
+                  <td class="table_head">Level9</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Skill DMG</td>
+                  <td class="table_detail">303%</td>
+                  <td class="table_detail">321%</td>
+                  <td class="table_detail">340%</td>
+                  <td class="table_detail">363%</td>
+                  <td class="table_detail">381%</td>
+                  <td class="table_detail">400%</td>
+                  <td class="table_detail">423%</td>
+                  <td class="table_detail">447%</td>
+                  <td class="table_detail">470%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Low HP Skill DMG</td>
+                  <td class="table_detail">379%</td>
+                  <td class="table_detail">402%</td>
+                  <td class="table_detail">424%</td>
+                  <td class="table_detail">454%</td>
+                  <td class="table_detail">477%</td>
+                  <td class="table_detail">499%</td>
+                  <td class="table_detail">529%</td>
+                  <td class="table_detail">558%</td>
+                  <td class="table_detail">588%</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Skill HP Regeneration</td>
+                  <td class="table_detail">6.26% Max HP</td>
+                  <td class="table_detail">6.64% Max HP</td>
+                  <td class="table_detail">7.01% Max HP</td>
+                  <td class="table_detail">7.50% Max HP</td>
+                  <td class="table_detail">7.88% Max HP</td>
+                  <td class="table_detail">8.25% Max HP</td>
+                  <td class="table_detail">8.74% Max HP</td>
+                  <td class="table_detail">9.23% Max HP</td>
+                  <td class="table_detail">9.71% Max HP</td>
+                </tr>
+                <tr>
+                  <td class="table_head">Low HP Skill Regeneration</td>
+                  <td class="table_detail">8.35% Max HP</td>
+                  <td class="table_detail">8.85% Max HP</td>
+                  <td class="table_detail">9.35% Max HP</td>
+                  <td class="table_detail">10.00% Max HP</td>
+                  <td class="table_detail">10.50% Max HP</td>
+                  <td class="table_detail">11.00% Max HP</td>
+                  <td class="table_detail">11.65% Max HP</td>
+                  <td class="table_detail">12.30% Max HP</td>
+                  <td class="table_detail">12.95% Max HP</td>
+                </tr>
+                <tr>
+                  <td class="table_head">CD</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                  <td class="table_detail">15.0s</td>
+                </tr>
+              </table>
+        </div>
+        <!-- End of talent3 data table -->
 
     </main>
     
