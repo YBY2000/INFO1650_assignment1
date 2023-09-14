@@ -27,7 +27,7 @@ All the .css files are put here.
 ## Tags been Used
 ### Favicon
     The favicon is defined in the <head> tag, which set the "favicon.ico" as the icon of the website page.
-    <img src="./resources/img_for_markdown/favicon_code.png" alt="favicon_code">
+    <img src="resources/img_for_markdown/favicon_code.png" alt="favicon_code">
     <img src="resources/img_for_markdown/favicon.png" alt="favicon">
 
 ### Table
