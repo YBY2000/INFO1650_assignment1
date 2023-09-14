@@ -1,0 +1,43 @@
+
+
+/* character data */
+.detail_box {
+    width: 1200px;
+    height: max-content;
+    margin: 0 auto;
+    background-color: #3e1818ad;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.box_title {
+    text-align: left;
+    padding: 1%;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: inherit;
+}
+
+
+table {
+    height: auto;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.table_font {
+    font-size: 15px;
+}
+
+.table_head {
+    width: 20%;
+    height: 40px;
+    color: hsla(0,0%,100%,.45);
+    font-size: 15px;
+}
+
+.table_detail {
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Profile - HuTao</title>
     <link rel="stylesheet" href="css_file/index.css">
+    <link rel="stylesheet" href="css_file/global.css">
     <link rel="icon" type="image/webp" href="/resources/favicon.ico">
 </head>
 
@@ -17,11 +18,20 @@
             <source class="body_bg_source" src="resources/bg_pyro.webm" type="video/webm">
             <source class="body_bg_source" src="resources/bg_pyro.mp4" type="video/mp4">
         </video></div>
-        <!-- The base infomation box -->
-        <div>
-            
+
+        <!-- The sidebar -->
+        <div class="nav_bar">
+            <menu>
+                <li class="nav_bar_item"><a href="#Information">Information</a></li>
+                <li class="nav_bar_item"><a href="#Talent">Talent</a></li>
+                <li class="nav_bar_item"><a href="#Constellation">Constellation</a></li>
+                <li class="nav_bar_item"><a>Team</a></li>
+            </menu>
         </div>
-        <div class="base_info">
+
+
+        <!-- The base infomation box -->
+        <div id="Information" class="base_info">
             <div><img class="base_info_left" src="resources/HUTAO.png" alt="Genshin - HUTAO"></div>
             <div class="base_info_right">
                 <div class="base_info_box">
@@ -37,25 +47,26 @@
                         <img src="resources/levelStar.png" alt="star" class="level_star_img">
                         <img src="resources/levelStar.png" alt="star" class="level_star_img">
                     </div>
-                    <div>
-                        <details>
-                            <summary class="greeting">Greeting Voice</summary>
-                            <audio controls autoplay="false">
-                                <source src="resources/voice.wav" type="audio/wav">
-                                Your browser does not support the audio element.
-                              </audio>
-                        </details>
+
+                    <!-- Greeting audio -->
+                    <div class="detail_box" style="display: flex;">
+                        <div class="box_title greeting">Greeting Voice</div>
+                        <audio controls autoplay="false">
+                            <source src="resources/voice.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                          </audio>
                     </div>
-                    <!-- End of base information -->
                     
                     <!-- Description -->
                     <div class="detail_box">
+                        <details>
+                            <summary class="box_title">Character Description</summary>
                             <p id="description">The 77th Director of the Wangsheng Funeral Parlor, a young lady managing the parlor's operations. Despite her position, she's an amiable person who puts on no airs.
                                 Her antics are as plentiful as the sand on Yaoguang Shoal. She never ceases to shock people with her countless bizarre ideas.
                                 Hu Tao may seem like all play and no work, spending every free moment on leisure and being widely considered a laissez-faire business owner.
                                 It is only during funeral ceremonies, when she personally leads her undertakers through lamp-lit alleys, that she shows her dignified and solemn side.</p>
+                        </details>
                     </div>
-                    <!-- End of description -->
                         
                     <!-- Table of base information attributes -->
                     <div class="detail_box">
@@ -99,15 +110,19 @@
                 </div>
             </div>
         </div>
+        <!-- End of base information -->
+
+
         <div class="other_info">
-            <!-- Talent -->
-            <div class="other_info_box">
+            <!-- Talent description -->
+            <div id="Talent" class="other_info_box">
                 <div class="box_title"><strong>Talents<hr></strong></div>
+
                 <!-- Talent 1 -->
                 <div class="info_box">
                     <img src="resources/battle_talent_0.png" alt="battle_talent_1" class="img_talent">
                     <div class="talent_title">Normal Attack: Secret Spear of Wangsheng</div>
-                    <div class="talent_detail">
+                    <div class="talent_detail_with_video">
                         <span class="talent_subtitle">Normal Attack</span><br>
                         Performs up to six consecutive spear strikes.<br><br>
                         
@@ -120,11 +135,12 @@
                     <div class="talent_detail_video"><video width="350" controls><source src="resources/battle_talent_0.mp4" type="video/mp4"></video></div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Talent 2 -->
                 <div class="info_box">
                     <img src="resources/battle_talent_1.png" alt="battle_talent_2" class="img_talent">
                     <div class="talent_title">Guide to Afterlife</div>
-                    <div class="talent_detail">
+                    <div class="talent_detail_with_video">
                         Only an unwavering flame can cleanse the impurities of this world.<br>
                         Hu Tao consumes a set portion of her HP to knock the surrounding enemies back and enter the Paramita Papilio state.<br><br>
                         <span class="talent_subtitle">Paramita Papilio</span><br>
@@ -143,11 +159,12 @@
                     <div class="talent_detail_video"><video width="350" controls><source src="resources/battle_talent_1.mp4" type="video/mp4"></video></div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Talent 3 -->
                 <div class="info_box">
                     <img src="resources/battle_talent_2.png" alt="battle_talent_3" class="img_talent">
                     <div class="talent_title">Spirit Soother</div>
-                    <div class="talent_detail">
+                    <div class="talent_detail_with_video">
                         Commands a blazing spirit to attack, dealing <span class="font_pyro">Pyro DMG</span> in a large AoE.<br>
                         Upon striking the enemy, regenerates a percentage of Hu Tao's Max HP. This effect can be triggered up to 5 times, based on the number of enemies hit.<br>
                         If Hu Tao's HP is below or equal to 50% when the enemy is hit, both the DMG and HP Regeneration are increased.<br><br>
@@ -158,6 +175,7 @@
                     <div class="talent_detail_video"><video width="350" controls><source src="resources/battle_talent_2.mp4" type="video/mp4"></video></div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Talent 4 -->
                 <div class="info_box">
                     <img src="resources/const_talent_0.png" alt="const_talent_1" class="img_talent">
@@ -167,6 +185,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Talent 5 -->
                 <div class="info_box">
                     <img src="resources/const_talent_1.png" alt="const_talent_2" class="img_talent">
@@ -176,6 +195,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Talent 6 -->
                 <div class="info_box">
                     <img src="resources/const_talent_2.png" alt="const_talent_3" class="img_talent">
@@ -191,9 +211,10 @@
 
         <div style="height: 100px;"></div>
         <div class="other_info">
-            <!-- Constellation -->
-            <div class="other_info_box">
+            <!-- Constellation description-->
+            <div id="Constellation" class="other_info_box">
                 <div class="box_title"><strong>Constellation<hr></strong></div>
+
                 <!-- Constellation 1 -->
                 <div class="info_box">
                     <img src="resources/constellation_1.png" alt="constellation_1" class="img_talent">
@@ -203,6 +224,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Constellation 2 -->
                 <div class="info_box">
                     <img src="resources/constellation_2.png" alt="constellation_2" class="img_talent">
@@ -213,6 +235,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Constellation 3 -->
                 <div class="info_box">
                     <img src="resources/constellation_3.png" alt="constellation_3" class="img_talent">
@@ -223,6 +246,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Constellation 4 -->
                 <div class="info_box">
                     <img src="resources/constellation_4.png" alt="constellation_4" class="img_talent">
@@ -232,6 +256,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Constellation 5 -->
                 <div class="info_box">
                     <img src="resources/constellation_5.png" alt="constellation_5" class="img_talent">
@@ -242,6 +267,7 @@
                     </div>
                 </div>
                 <hr class="sub_hr">
+
                 <!-- Constellation 6 -->
                 <div class="info_box">
                     <img src="resources/constellation_6.png" alt="constellation_6" class="img_talent">
@@ -257,17 +283,17 @@
             <!-- End of Constellation -->
         </div>
     </div>
-            
-            
-        </div>
     </main>
 
-    <!-- <footer>
-        <i><small>Copyright &copy; Boyuan YE<br>
-            <a href="tel:18786008007">(+86)18786008007</a><br>
-            <a href="mailto:ye.boy@northeastern.edu">ye.boy@northeastern.edu</a>
-        </small></i>
-    </footer> -->
-    
+    <footer>
+        <div class="footer_info">
+            <ul>
+                <li><a href="tel:18786008007">(+1)8575401491</a></li>
+                <li><a href="mailto:ye.boy@northeastern.edu">ye.boy@Northeastern.edu</a></li>
+            </ul>
+
+            <p>Copyright &copy; Boyuan YE</p>
+        </div>
+    </footer>
 </body>
 </html>
